@@ -45,7 +45,7 @@ $colors: (
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-$toolbar-ios-title-text-color: map-get($colors, secondary);
+$toolbar-ios-title-text-color: #E30913;
 
 
 
@@ -53,14 +53,14 @@ $toolbar-ios-title-text-color: map-get($colors, secondary);
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-$toolbar-md-title-text-color: map-get($colors, secondary);
+$toolbar-md-title-text-color: #E30913;
 
 
 
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-$toolbar-wp-title-text-color: map-get($colors, secondary);
+$toolbar-wp-title-text-color: #E30913;
 
 
 

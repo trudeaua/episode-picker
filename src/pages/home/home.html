@@ -1,16 +1,25 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      Pick A Show
+      Episode Picker
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <p id="intro">Pick a TV show below to start watching a random episode!<br><br></p>
-  <ion-list >
-    <button ion-item class="showname" *ngFor="let show of shows" (click)="watchEpisode(show)" >
-      {{show.name}}
-    </button>
-  </ion-list>
+<ion-content class="bg" padding>
+  <p id="intro">Pick a TV show below to start watching a random episode!
+    <br>
+    <br>
+  </p>
+  <ion-card class="showname" *ngFor="let show of shows; let i = index" (click)="watchEpisode(show)">
+    <img class="crop" src="{{show.img}}" alt="img">
+    <ion-card-content>
+      <ion-card-title>
+        {{show.name}}
+      </ion-card-title>
+      <p>
+        {{show.info}}
+      </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

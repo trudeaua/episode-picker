@@ -3,7 +3,7 @@
     <name>episode-picker-mobile</name>
     <description>An app to pick an episode on Netflix for you</description>
     <author email="trudeauadev@gmail.com" href="http://trudeaua.ca/">Alex Trudeau</author>
-    <content original-src="index.html" src="http://192.168.0.147:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -78,6 +78,7 @@
     </platform>
     <allow-navigation href="http://192.168.0.147:8100" />
     <engine name="android" spec="~6.3.0" />
+    <engine name="ios" spec="~4.5.4" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />

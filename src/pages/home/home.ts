@@ -4,12 +4,16 @@ import { DataService } from '../../shared/data.service';
 import { Device } from "@ionic-native/device";
 import { AppAvailability } from "@ionic-native/app-availability";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
+
+import * as imdb from "imdb-api";
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
   shows: any[];
+  descriptions: any[];
   constructor(
     public navCtrl: NavController,
     public dataService: DataService,

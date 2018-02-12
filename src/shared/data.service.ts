@@ -8,7 +8,10 @@ export class DataService {
         this.shows = [
             {
                 "name": "The Office",
-                "trackId": 200257859
+                "trackId": 200257859,
+                "imdbId": "tt0386676",
+                "img": "https://gchseagleseye.com/wp-content/uploads/2017/12/CB4F175D-52A6-4AB3-870A-FCB844E99154.jpeg",
+                "info": "A mediocre paper company in the hands of Scranton, PA branch manager Michael Scott. This mockumentary follows the everyday lives of the manager and the employees he \"manages.\" The crew follows the employees around 24/7 and captures their quite humerous and bizarre encounters as they will do what it takes to keep the company thriving."
             }
         ]
         this.episodes = [
