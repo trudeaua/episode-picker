@@ -34,8 +34,8 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #2b2b2b,
+  secondary:  #E30913,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222
@@ -45,6 +45,7 @@ $colors: (
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
+$toolbar-ios-title-text-color: map-get($colors, secondary);
 
 
 
@@ -52,13 +53,14 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
+$toolbar-md-title-text-color: map-get($colors, secondary);
 
 
 
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
+$toolbar-wp-title-text-color: map-get($colors, secondary);
 
 
 

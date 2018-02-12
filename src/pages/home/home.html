@@ -1,14 +1,16 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Pick A Show
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <p id="intro">Pick a TV show below to start watching a random episode!<br><br></p>
+  <ion-list >
+    <button ion-item class="showname" *ngFor="let show of shows" (click)="watchEpisode(show)" >
+      {{show.name}}
+    </button>
+  </ion-list>
 </ion-content>
