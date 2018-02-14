@@ -11,12 +11,24 @@
     <br>
     <br>
   </p>
-  <ion-card class="showname" *ngFor="let show of shows; let i = index" (click)="watchEpisode(show)">
+  <ion-card class="showname" *ngFor="let show of shows; let i = index">
     <img class="crop" src="{{show.img}}" alt="img">
     <ion-card-content>
-      <ion-card-title>
-        {{show.name}}
-      </ion-card-title>
+      <ion-grid class="info-container">
+        <ion-row>
+          <ion-col>
+            <ion-card-title>
+              {{show.name}}
+            </ion-card-title>
+          </ion-col>
+          <ion-col>
+            <button ion-button small icon-left class="play-button" [color]="show.color" (click)="watchEpisode(show)">
+              <ion-icon name="play"></ion-icon>
+              Play
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
       <p>
         {{show.info}}
       </p>

@@ -23,10 +23,11 @@ export class HomePage {
     this.shows = dataService.getShows();
   }
   watchEpisode(show) {
-    let episode = this.dataService.getRandomEpisode(show.trackId);
-    console.log(`Watching ${show.name}, Season ${episode.season} Episode ${episode.episode}`)
-    this.openNetflix(episode.episodeId, episode.trackId);
-
+    let episode = this.dataService.getRandomEpisode(show.imdbId);
+    if (episode) {
+      console.log(`Watching ${show.name}, Season ${episode.season} Episode ${episode.episode}`)
+      this.openNetflix(episode.episodeId, episode.trackId);
+    }
   }
   launchExternalApp(iosSchemaName: string, androidPackageName: string, appUrl: string, httpUrl: string) {
     let app: string;

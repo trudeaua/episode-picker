@@ -3,7 +3,7 @@
     <name>episode-picker-mobile</name>
     <description>An app to pick an episode on Netflix for you</description>
     <author email="trudeauadev@gmail.com" href="http://trudeaua.ca/">Alex Trudeau</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.0.147:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

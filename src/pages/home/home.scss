@@ -8,4 +8,12 @@ page-home {
         color: #FFFFFF;
         text-shadow: 2px 2px 5px #000000;
     }
+    .info-container {
+        position: relative;
+    }
+    .play-button {
+        position: absolute;
+        right: 20px;
+        top: 22%;
+    }
 }
